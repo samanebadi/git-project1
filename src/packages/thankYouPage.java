@@ -6,8 +6,9 @@ import java.awt.*;
 public class thankYouPage {
 
     public void create(JFrame frame) {
-        // Create and configure the panel with BorderLayout
+        // Create the panel with BorderLayout
         JPanel panel = new JPanel(new BorderLayout());
+        panel.setBackground(Color.YELLOW);
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
@@ -19,6 +20,3 @@ public class thankYouPage {
         frame.add(panel);
     }
 }
-
-
-

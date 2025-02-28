@@ -6,10 +6,10 @@ import java.awt.*;
 public class questionsPage {
 
     public void create(JFrame frame) {
-        // Create the panel with BoxLayout
+        // Create  the panel with BoxLayout
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-
+        panel.setBackground(Color.YELLOW);
 
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
@@ -107,7 +107,7 @@ public class questionsPage {
         panel.add(radio4_4);
         panel.add(radio4_5);
 
-        // Next button to go to next page
+        // Next button to go to Page3
         JButton nextButton = new JButton("صفحه بعد");
         nextButton.addActionListener(e -> {
             frame.remove(panel);
