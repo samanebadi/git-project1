@@ -16,7 +16,9 @@ public class Main {
         panel.setBackground(Color.YELLOW);
 
         // Create title label
-        JLabel title = new JLabel("فرم نظرسنجی", SwingConstants.CENTER);
+        JLabel title = new JLabel("فرم نظرسنجی");
+        title.setHorizontalAlignment(JLabel.CENTER);
+        title.setFont(new Font("Arial", Font.BOLD, 18));
         panel.add(title, BorderLayout.NORTH);
 
         // Create center panel for the button
@@ -27,8 +29,9 @@ public class Main {
         // Create start button
         JButton startButton = new JButton("شروع!");
         startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        startButton.setFont(new Font("Arial", Font.BOLD, 16));
 
-        // Add spacing for centering
+
         centerPanel.add(Box.createVerticalGlue());
         centerPanel.add(startButton);
         centerPanel.add(Box.createVerticalGlue());

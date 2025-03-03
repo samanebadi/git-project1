@@ -6,20 +6,31 @@ import java.awt.*;
 public class questionsPage {
 
     public void create(JFrame frame) {
-        // Create  the panel with BoxLayout
+        // Create the panel with BoxLayout
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setBackground(Color.YELLOW);
 
+
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
+
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
+        question1.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(question1);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+
         JRadioButton radio1_1 = new JRadioButton("۱");
+        radio1_1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio1_2 = new JRadioButton("۲");
+        radio1_2.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio1_3 = new JRadioButton("۳");
+        radio1_3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio1_4 = new JRadioButton("۴");
+        radio1_4.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio1_5 = new JRadioButton("۵");
+        radio1_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group1 = new ButtonGroup();
         group1.add(radio1_1);
@@ -28,22 +39,31 @@ public class questionsPage {
         group1.add(radio1_4);
         group1.add(radio1_5);
 
-        // Add radio buttons to the panel
         panel.add(radio1_1);
         panel.add(radio1_2);
         panel.add(radio1_3);
         panel.add(radio1_4);
         panel.add(radio1_5);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
+
         // Question 2
         JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
+        question2.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(question2);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+
         JRadioButton radio2_1 = new JRadioButton("۱");
+        radio2_1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio2_2 = new JRadioButton("۲");
+        radio2_2.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio2_3 = new JRadioButton("۳");
+        radio2_3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio2_4 = new JRadioButton("۴");
+        radio2_4.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio2_5 = new JRadioButton("۵");
+        radio2_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group2 = new ButtonGroup();
         group2.add(radio2_1);
@@ -52,22 +72,31 @@ public class questionsPage {
         group2.add(radio2_4);
         group2.add(radio2_5);
 
-        // Add radio buttons to the panel
         panel.add(radio2_1);
         panel.add(radio2_2);
         panel.add(radio2_3);
         panel.add(radio2_4);
         panel.add(radio2_5);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
+
         // Question 3
         JLabel question3 = new JLabel("چقدر طراحی صفحات نرم افزار ساده و کاربرپسند است؟");
+        question3.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(question3);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+
         JRadioButton radio3_1 = new JRadioButton("۱");
+        radio3_1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio3_2 = new JRadioButton("۲");
+        radio3_2.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio3_3 = new JRadioButton("۳");
+        radio3_3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio3_4 = new JRadioButton("۴");
+        radio3_4.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio3_5 = new JRadioButton("۵");
+        radio3_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group3 = new ButtonGroup();
         group3.add(radio3_1);
@@ -76,22 +105,31 @@ public class questionsPage {
         group3.add(radio3_4);
         group3.add(radio3_5);
 
-        // Add radio buttons to the panel
         panel.add(radio3_1);
         panel.add(radio3_2);
         panel.add(radio3_3);
         panel.add(radio3_4);
         panel.add(radio3_5);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
+
         // Question 4
         JLabel question4 = new JLabel("آیا رنگ ها و فونت های استفاده شده در نرم افزار مناسب هستند؟");
+        question4.setAlignmentX(Component.CENTER_ALIGNMENT);
         panel.add(question4);
 
+        panel.add(Box.createRigidArea(new Dimension(0, 10)));
+
         JRadioButton radio4_1 = new JRadioButton("۱");
+        radio4_1.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio4_2 = new JRadioButton("۲");
+        radio4_2.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio4_3 = new JRadioButton("۳");
+        radio4_3.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio4_4 = new JRadioButton("۴");
+        radio4_4.setAlignmentX(Component.CENTER_ALIGNMENT);
         JRadioButton radio4_5 = new JRadioButton("۵");
+        radio4_5.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         ButtonGroup group4 = new ButtonGroup();
         group4.add(radio4_1);
@@ -100,15 +138,17 @@ public class questionsPage {
         group4.add(radio4_4);
         group4.add(radio4_5);
 
-        // Add radio buttons to the panel
         panel.add(radio4_1);
         panel.add(radio4_2);
         panel.add(radio4_3);
         panel.add(radio4_4);
         panel.add(radio4_5);
 
-        // Next button to go to Page3
+        panel.add(Box.createRigidArea(new Dimension(0, 20)));
+
+        // Next button to go to next page
         JButton nextButton = new JButton("صفحه بعد");
+        nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         nextButton.addActionListener(e -> {
             frame.remove(panel);
             frame.revalidate();
@@ -128,4 +168,3 @@ public class questionsPage {
         frame.add(panel);
     }
 }
-
